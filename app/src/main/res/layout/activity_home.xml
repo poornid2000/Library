@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPink">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="402dp"
+        android:layout_height="705dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="26dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Welcome Back\n Shanaya"
+            android:textColor="@color/purple"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="341dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="Search"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#8C8C8C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="212dp">
+
+            <!-- New Arrivals Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="New Arrivals"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Image Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- First Image -->
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/book1" /> <!-- Add margin to the end -->
+
+                <!-- Second Image -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/book2" /> <!-- Add margin to the end -->
+
+                <!-- Third Image -->
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/book3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_bottom"
+            android:layout_width="459dp"
+            android:layout_height="166dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/register"
+            tools:layout_editor_absoluteX="-64dp"
+            tools:layout_editor_absoluteY="536dp" />
+
+        <TextView
+            android:id="@+id/text_best_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Best Books to Read"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/text_see_all"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <TextView
+            android:id="@+id/text_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="See All"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_best_books"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_best_books" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="88dp"
+            android:layout_height="81dp"
+            app:srcCompat="@drawable/user"
+            tools:layout_editor_absoluteX="293dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <!-- Container for the main content -->
+
+    <!-- Image at the bottom -->
+
+    <!-- "Best Books to Read" TextView at the top-left corner -->
+
+    <!-- "See All" TextView at the top-right corner -->
+
+</RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
